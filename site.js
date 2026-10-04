@@ -25,3 +25,14 @@ function apply(f){
 chips.addEventListener('click',function(e){var b=e.target.closest('.chip');if(b)apply(b.dataset.filter)});
 apply('all');
 })();
+(function(){
+var f=document.getElementById('gfilter'),g=document.getElementById('gallery');if(!f||!g)return;
+var items=[].slice.call(g.querySelectorAll('button')),cnt=document.getElementById('gcount');
+function apply(c){
+ [].forEach.call(f.querySelectorAll('.chip'),function(b){var on=b.dataset.filter===c;b.classList.toggle('on',on);b.setAttribute('aria-pressed',on)});
+ var n=0;items.forEach(function(b){var show=c==='all'||b.dataset.cat===c;b.hidden=!show;if(show)n++});
+ if(cnt)cnt.textContent='Showing '+n+' photo'+(n===1?'':'s')+'.';
+}
+f.addEventListener('click',function(e){var b=e.target.closest('.chip');if(b)apply(b.dataset.filter)});
+apply('all');
+})();
