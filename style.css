@@ -15,8 +15,8 @@
   --tan:#C9B28B;--tan-d:#7A6034;
   --header-h:72px;
   /* HERO IMAGE: change this one line to swap the home-page hero (e.g. a new building rendering) */
-  --hero-image:url('images/web/aerial-oceanfront-wide.jpg');
-  --hero-pos:center 66%;
+  --hero-image:url('images/web/palms-rendering-hero.jpg');
+  --hero-pos:center 40%;
   --serif:"Cormorant Garamond","Palatino Linotype",Palatino,Georgia,serif;
   --sans:"Lato","Segoe UI",Helvetica,Arial,sans-serif;
 }
@@ -70,7 +70,7 @@ nav a[aria-current="page"]{border-bottom-color:var(--tan);color:#fff;background:
 .deco-divider{position:absolute;bottom:-1px;left:0;width:100%;height:40px;display:block}
 @media(max-width:700px){
   .hero{padding:48px 14px 72px}
-  .hero.home{--hero-pos:56% 60%;min-height:520px;padding:64px 14px 90px}
+  .hero.home{--hero-pos:50% 50%;min-height:520px;padding:64px 14px 90px}
   .hero-card{padding:36px 20px 28px}
 }
 
