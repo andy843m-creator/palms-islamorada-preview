@@ -49,7 +49,7 @@ nav a:hover{color:var(--haint);border-bottom-color:var(--tan)}
 nav a[aria-current="page"]{border-bottom-color:var(--tan);color:#fff;background:rgba(184,221,224,.14)}
 .menu-btn{display:none;background:transparent;border:1px solid var(--tan);color:var(--cream);border-radius:4px;font:700 1.2rem var(--serif);text-transform:uppercase;letter-spacing:.1em;padding:10px 18px;min-height:48px;cursor:pointer}
 .menu-btn:hover{background:rgba(184,221,224,.15)}
-@media(max-width:1060px){
+@media(max-width:1200px){
   .menu-btn{display:block}
   nav{display:none;position:absolute;left:0;right:0;top:var(--header-h);background:var(--ink);padding:8px 24px 18px;border-bottom:2px solid var(--tan)}
   nav.open{display:block}nav ul{flex-direction:column;gap:0}
@@ -155,3 +155,24 @@ footer .small{font-size:1rem}
 sup.ref{font-size:.7em;line-height:0;margin-left:2px}sup.ref a{text-decoration:none;font-weight:700;padding:0 1px}
 p.jump{font-weight:700}
 p.jump a{display:inline-block;padding:6px 2px}
+/* vendors */
+.steps{counter-reset:s;list-style:none;padding:0;margin:14px 0 28px;display:grid;gap:14px}
+.steps li{counter-increment:s;position:relative;padding:16px 18px 16px 76px;background:var(--white);border:1px solid var(--tan);border-radius:3px;font-size:1.15rem}
+.steps li:before{content:counter(s);position:absolute;left:16px;top:50%;transform:translateY(-50%);width:44px;height:44px;border-radius:50%;background:var(--ink);color:var(--cream);font-family:var(--serif);font-weight:700;font-size:1.5rem;display:flex;align-items:center;justify-content:center}
+.sample-banner{background:#FFF3CD;border:2px dashed #A38A5A;color:#5A4620;font-weight:700;font-size:1.25rem;text-align:center;padding:14px;border-radius:3px;margin:12px 0 20px}
+.vsearch-label{display:block;font-weight:700;margin:10px 0 6px}
+.vsearch{width:100%;max-width:560px;font:inherit;font-size:1.2rem;padding:12px 14px;border:1px solid var(--ink);border-radius:3px;min-height:52px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 22px}
+.chip{font:inherit;font-size:1.05rem;padding:10px 16px;min-height:46px;border:1px solid var(--ink);border-radius:999px;background:var(--white);color:var(--ink);cursor:pointer}
+.chip.on{background:var(--ink);color:var(--cream)}
+.vcard{background:var(--white);border:1px solid var(--tan);border-top:4px solid var(--haint-d);border-radius:3px;padding:20px 22px}
+.vtop{display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap}
+.sample-tag{background:#5A4620;color:#fff;font-weight:700;letter-spacing:.12em;padding:3px 10px;border-radius:3px}
+.vbadge{color:#1E6B3A;font-weight:700}
+.vcard h3{margin:.5em 0 .2em}.vmeta{font-size:1.05rem;margin:.3em 0}
+.vchips{list-style:none;padding:0;margin:8px 0;display:flex;flex-wrap:wrap;gap:6px}
+.vchips li{background:#E7F3EA;color:#1E4D2E;border-radius:999px;padding:4px 10px;font-size:.98rem}
+.small-btn{font-size:1rem;padding:10px 14px;min-height:44px}
+.vbtns button[disabled]{opacity:.7;cursor:not-allowed}
+.btn[aria-disabled="true"]{opacity:.75;cursor:not-allowed}
+@media(min-width:1201px){nav a{white-space:nowrap;padding:12px 10px;font-size:1.15rem}}

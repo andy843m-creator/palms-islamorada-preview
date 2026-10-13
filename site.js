@@ -36,3 +36,7 @@ function apply(c){
 f.addEventListener('click',function(e){var b=e.target.closest('.chip');if(b)apply(b.dataset.filter)});
 apply('all');
 })();
+(function(){var g=document.getElementById('vgrid');if(!g)return;var q=document.getElementById('vsearch'),cat='all',none=document.getElementById('vnone');
+function f(){var t=(q.value||'').toLowerCase(),n=0;g.querySelectorAll('.vcard').forEach(function(c){var ok=(cat==='all'||c.dataset.cats.indexOf(cat)>-1)&&(!t||c.textContent.toLowerCase().indexOf(t)>-1);c.hidden=!ok;if(ok)n++});none.hidden=n>0}
+q.addEventListener('input',f);document.querySelectorAll('.chip').forEach(function(b){b.addEventListener('click',function(){document.querySelectorAll('.chip').forEach(function(x){x.classList.remove('on')});b.classList.add('on');cat=b.dataset.cat;f()})});
+document.querySelectorAll('[aria-disabled="true"]').forEach(function(a){a.addEventListener('click',function(e){e.preventDefault()})})})();
