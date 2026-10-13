@@ -181,3 +181,8 @@ p.jump a{display:inline-block;padding:6px 2px}
 .vstars.none{color:#B9B2A4}
 .vsort{margin:14px 0 0}.vsort label{font-weight:700;margin-right:8px}
 .vsort select{width:auto;max-width:320px}
+.vchips li.pend{background:#EFECE5;color:#4A4537}
+.vlisted{background:#FFF3CD;color:#5A4620;font-weight:700;font-size:.95rem;padding:2px 8px;border-radius:3px}
+.vflag{background:#FBEDEA;border-left:4px solid #A8452F;color:#5E2417;padding:6px 10px;margin:8px 0;font-size:1.02rem}
+.vrating a,.vcard a{word-break:break-word}
+.vchips li{border-radius:12px}
