@@ -40,3 +40,8 @@ apply('all');
 function f(){var t=(q.value||'').toLowerCase(),n=0;g.querySelectorAll('.vcard').forEach(function(c){var ok=(cat==='all'||c.dataset.cats.indexOf(cat)>-1)&&(!t||c.textContent.toLowerCase().indexOf(t)>-1);c.hidden=!ok;if(ok)n++});none.hidden=n>0}
 q.addEventListener('input',f);document.querySelectorAll('.chip').forEach(function(b){b.addEventListener('click',function(){document.querySelectorAll('.chip').forEach(function(x){x.classList.remove('on')});b.classList.add('on');cat=b.dataset.cat;f()})});
 document.querySelectorAll('[aria-disabled="true"]').forEach(function(a){a.addEventListener('click',function(e){e.preventDefault()})})})();
+(function(){var g=document.getElementById('vgrid'),sel=document.getElementById('vsort');if(!g||!sel)return;var orig=[].slice.call(g.children);
+sel.addEventListener('change',function(){var c=orig.slice();function v(a,k){var r=a.querySelector('.vrating');return r?parseFloat(r.dataset[k])||0:0}
+if(sel.value==='rating')c.sort(function(a,b){return v(b,'rating')-v(a,'rating')||v(b,'reviews')-v(a,'reviews')});
+else if(sel.value==='reviews')c.sort(function(a,b){return v(b,'reviews')-v(a,'reviews')});
+c.forEach(function(x){g.appendChild(x)})})})();

@@ -176,3 +176,8 @@ p.jump a{display:inline-block;padding:6px 2px}
 .vbtns button[disabled]{opacity:.7;cursor:not-allowed}
 .btn[aria-disabled="true"]{opacity:.75;cursor:not-allowed}
 @media(min-width:1201px){nav a{white-space:nowrap;padding:12px 10px;font-size:1.15rem}}
+.vrating{font-size:1.15rem;margin:8px 0}
+.vstars{color:#B8862B;font-size:1.4rem;letter-spacing:2px}
+.vstars.none{color:#B9B2A4}
+.vsort{margin:14px 0 0}.vsort label{font-weight:700;margin-right:8px}
+.vsort select{width:auto;max-width:320px}
