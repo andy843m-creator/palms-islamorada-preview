@@ -1,0 +1,43 @@
+name: Fishing report
+# Every two days at midnight Eastern. GitHub cron is UTC only, so this fires at
+# 04:00 UTC (midnight EDT) and 05:00 UTC (midnight EST) every day; the gate step
+# only continues when it is the 00:xx hour in America/New_York on an even-numbered
+# day (by day count since 0001-01-01), which gives a steady every-other-day cadence
+# with no DST drift. Manual runs (workflow_dispatch) always build.
+on:
+  schedule:
+    - cron: '0 4 * * *'
+    - cron: '0 5 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency: fishing-report
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Gate (midnight ET, every 2 days)
+        id: gate
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then echo "go=1" >> $GITHUB_OUTPUT; exit 0; fi
+          H=$(TZ=America/New_York date +%H)
+          N=$(python3 -c "import datetime,zoneinfo;print(datetime.datetime.now(zoneinfo.ZoneInfo('America/New_York')).date().toordinal()%2)")
+          echo "ET hour=$H parity=$N"
+          if [ "$H" = "00" ] && [ "$N" = "0" ]; then echo "go=1" >> $GITHUB_OUTPUT; else echo "go=0" >> $GITHUB_OUTPUT; fi
+      - uses: actions/checkout@v4
+        if: steps.gate.outputs.go == '1'
+      - uses: actions/setup-python@v5
+        if: steps.gate.outputs.go == '1'
+        with: { python-version: '3.12' }
+      - name: Build data/fishing.json
+        if: steps.gate.outputs.go == '1'
+        run: python3 scripts/build_fishing.py
+      - name: Commit
+        if: steps.gate.outputs.go == '1'
+        run: |
+          git config user.name "palms-fishing-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/fishing.json
+          git diff --cached --quiet && exit 0
+          git commit -m "Fishing report: refresh data $(TZ=America/New_York date '+%Y-%m-%d %H:%M ET')"
+          git push
