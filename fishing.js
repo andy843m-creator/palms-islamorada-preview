@@ -1,24 +1,16 @@
 (function(){
-var BITE={
-1:{off:"Sailfish (peak season), kingfish, blackfin tuna, wahoo",reef:"Yellowtail snapper, mutton snapper, cero mackerel. Shallow-water grouper closed Jan-Apr",bay:"Redfish, sea trout, snook on warm days (snook harvest closed)",dock:"Snapper, jacks, sheepshead, barracuda"},
-2:{off:"Sailfish, kingfish, blackfin tuna",reef:"Yellowtail, mutton snapper, cero mackerel. Grouper closed",bay:"Redfish, trout, early tarpon on warm spells",dock:"Sheepshead, snapper, jacks"},
-3:{off:"Sailfish, early mahi, blackfin tuna, cobia",reef:"Yellowtail, mutton snapper (pre-spawn). Grouper closed",bay:"Tarpon arriving, redfish, permit on the flats",dock:"Snapper, jacks, tarpon at the bridges at night"},
-4:{off:"Mahi, blackfin tuna, sailfish tapering",reef:"Mutton snapper, yellowtail. Grouper closed through Apr 30",bay:"Tarpon (peak starts), bonefish, permit",dock:"Tarpon at the bridges, snapper"},
-5:{off:"Mahi (peak), blackfin tuna, wahoo",reef:"Yellowtail, mutton, grouper reopens May 1",bay:"Tarpon (peak), bonefish, permit",dock:"Tarpon, mangrove snapper, jacks"},
-6:{off:"Mahi, blackfin tuna, swordfish (day drops)",reef:"Mangrove and yellowtail snapper, grouper",bay:"Tarpon, bonefish, snook (Atlantic harvest closed Jun-Aug)",dock:"Mangrove snapper (evening), jacks"},
-7:{off:"Mahi, blackfin tuna, swordfish",reef:"Mangrove snapper spawn, yellowtail, grouper",bay:"Bonefish, permit, snook (catch-and-release)",dock:"Mangrove snapper, barracuda. Lobster mini-season late July"},
-8:{off:"Mahi, swordfish, blackfin tuna",reef:"Yellowtail, mangrove snapper, grouper. Spiny lobster season opens Aug 6",bay:"Bonefish, redfish, snook",dock:"Snapper, jacks, barracuda"},
-9:{off:"Mahi tapering, wahoo, blackfin tuna",reef:"Yellowtail, mangrove snapper, grouper",bay:"Snook (harvest reopens Sept 1), redfish, bonefish",dock:"Snook at night, snapper"},
-10:{off:"Wahoo, blackfin tuna, kingfish, first sailfish",reef:"Yellowtail, mutton snapper, grouper, hogfish",bay:"Redfish, snook, sea trout, bonefish",dock:"Snapper, snook, jacks, barracuda"},
-11:{off:"Sailfish (season starts), kingfish, wahoo, blackfin tuna",reef:"Yellowtail, grouper, cero mackerel, hogfish",bay:"Redfish, snook, sea trout",dock:"Snapper, jacks, ladyfish, Spanish mackerel"},
-12:{off:"Sailfish (peak), kingfish, wahoo, blackfin tuna",reef:"Yellowtail, grouper (closes Jan 1), cero mackerel",bay:"Redfish, trout, snook (Atlantic harvest closes Dec 15)",dock:"Sheepshead, snapper, jacks"}};
-var M=["January","February","March","April","May","June","July","August","September","October","November","December"];
-var m=new Date().getMonth(), b=BITE[m+1];
-document.getElementById('month').textContent=M[m];
-document.getElementById('bite').innerHTML=[["Offshore (Gulf Stream)",b.off],["Reef and wrecks",b.reef],["Bay and backcountry",b.bay],["Bridges, docks and shore",b.dock]].map(function(x){return '<div class="card"><h3>'+x[0]+'</h3><p>'+x[1]+'</p></div>';}).join('');
 function e(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
 function tides(a){return a.length?a.map(function(t){return '<li><strong>'+t.type+'</strong> '+e(t.time)+' <span class="small">('+t.ft.toFixed(1)+' ft)</span></li>';}).join(''):'<li>Not available</li>';}
+var IMG={backcountry:['keys-islamorada-sunset.jpg','Sunset over the Islamorada backcountry'],flats:['ocean-pier-turquoise-water.jpg','Clear turquoise shallows'],reef:['alligator-reef-lighthouse-aerial.jpg','Alligator Reef Lighthouse from the air'],offshore:['boat-at-lighthouse.jpg','Boat near the reef lighthouse']};
+var ICO={backcountry:'\u{1F33F}',flats:'\u{1F3A3}',reef:'\u{1F420}',offshore:'\u{1F41F}'};
 fetch('data/fishing.json',{cache:'no-cache'}).then(function(r){return r.json();}).then(function(d){
+ var R=d.report||{cards:[],conditions:{},wind_days:[]}, c=R.conditions;
+ document.getElementById('cards').innerHTML=R.cards.map(function(k){var im=IMG[k.key];return '<article class="fr-card fr-'+k.key+'"><img src="images/web/'+im[0]+'" alt="'+im[1]+'" loading="lazy"><div class="fr-card-b"><h3><span aria-hidden="true">'+ICO[k.key]+'</span> '+e(k.title)+'</h3><p>'+e(k.text)+'</p><h4>Top species</h4><ul class="fr-sp">'+k.species.map(function(x){return '<li><span class="nm">'+e(x.name)+(x.note?' <small>('+e(x.note)+')</small>':'')+'</span><span class="pill p-'+x.rating.toLowerCase()+'">'+e(x.rating)+'</span></li>';}).join('')+'</ul></div></article>';}).join('');
+ var L=[['Water temp',c.water],['Winds',c.wind_trend?(c.wind_trend.charAt(0).toUpperCase()+c.wind_trend.slice(1)+' this week; today '+c.wind_now):null],['Seas nearshore',c.seas_near],['Seas offshore',c.seas_off],['Moon',c.moon],['Tides',c.tides]];
+ document.getElementById('cond').innerHTML=L.filter(function(x){return x[1];}).map(function(x){return '<li><strong>'+x[0]+':</strong> '+e(x[1])+'</li>';}).join('');
+ if(c.wind_trend)document.getElementById('outlook-h').textContent='Outlook: winds '+c.wind_trend;
+ document.getElementById('outlook').textContent=c.outlook||'';
+ document.getElementById('windbar').innerHTML=R.wind_days.map(function(w){return '<div><b>'+e(w.day)+'</b><span>'+w.wind_kt+' kt</span><i>'+e(w.dir)+'</i></div>';}).join('');
  document.getElementById('updated').innerHTML='<br><strong>Last updated:</strong> '+e(d.generated_label)+'.';
  var w=d.water_temp, t=d.days[0];
  document.getElementById('now').innerHTML='<div class="fr-stat"><span>Moon today</span><b>'+e(t.moon.phase)+'</b><i>'+t.moon.illumination+'% lit</i></div>'+

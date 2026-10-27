@@ -1,6 +1,203 @@
 {
- "generated": "2026-10-27T13:04-04:00",
- "generated_label": "Tuesday, October 27, 2026 at 1:04 PM ET",
+ "report": {
+  "cards": [
+   {
+    "key": "backcountry",
+    "title": "Backcountry",
+    "text": "Typical for October: snook and redfish are usually the top targets. Bay and mangrove shorelines are the most protected water when the wind blows. Stronger moon tides should keep water moving.",
+    "species": [
+     {
+      "name": "Snook",
+      "rating": "Excellent",
+      "note": "harvest open"
+     },
+     {
+      "name": "Redfish",
+      "rating": "Excellent",
+      "note": null
+     },
+     {
+      "name": "Tarpon",
+      "rating": "Good",
+      "note": "catch and release"
+     },
+     {
+      "name": "Jacks",
+      "rating": "Good",
+      "note": null
+     },
+     {
+      "name": "Sea trout",
+      "rating": "Good",
+      "note": null
+     }
+    ]
+   },
+   {
+    "key": "flats",
+    "title": "Flats",
+    "text": "Typical for October: bonefish is usually the top target. Sight fishing needs calm, clear water, so wait for the lighter days.",
+    "species": [
+     {
+      "name": "Bonefish",
+      "rating": "Excellent",
+      "note": "catch and release"
+     },
+     {
+      "name": "Permit",
+      "rating": "Good",
+      "note": "special Keys permit rules"
+     },
+     {
+      "name": "Tarpon",
+      "rating": "Good",
+      "note": "catch and release"
+     },
+     {
+      "name": "Barracuda",
+      "rating": "Good",
+      "note": null
+     },
+     {
+      "name": "Sea trout",
+      "rating": "Good",
+      "note": null
+     }
+    ]
+   },
+   {
+    "key": "reef",
+    "title": "Reef",
+    "text": "Typical for October: yellowtail snapper and grouper are usually the top targets. Seas on the reef line are rough early in the week; conditions look better later in the week. Stronger moon tides should keep water moving.",
+    "species": [
+     {
+      "name": "Yellowtail snapper",
+      "rating": "Excellent",
+      "note": null
+     },
+     {
+      "name": "Grouper",
+      "rating": "Excellent",
+      "note": "gag closed after Aug 1; others open, rules apply"
+     },
+     {
+      "name": "Mutton snapper",
+      "rating": "Good",
+      "note": null
+     },
+     {
+      "name": "Mangrove snapper",
+      "rating": "Good",
+      "note": null
+     },
+     {
+      "name": "Hogfish",
+      "rating": "Good",
+      "note": null
+     }
+    ]
+   },
+   {
+    "key": "offshore",
+    "title": "Offshore / Deep Sea",
+    "text": "Typical for October: wahoo is usually the top target. Offshore seas reach about 9 ft at times this week, so pick your day.",
+    "species": [
+     {
+      "name": "Wahoo",
+      "rating": "Excellent",
+      "note": null
+     },
+     {
+      "name": "Sailfish",
+      "rating": "Good",
+      "note": null
+     },
+     {
+      "name": "Blackfin tuna",
+      "rating": "Good",
+      "note": null
+     },
+     {
+      "name": "Kingfish",
+      "rating": "Good",
+      "note": null
+     },
+     {
+      "name": "Mahi",
+      "rating": "Fair",
+      "note": null
+     }
+    ]
+   }
+  ],
+  "conditions": {
+   "wind_trend": "dropping",
+   "wind_now": "N 27 kt, gusts 35 kt",
+   "outlook": "Winds are forecast to drop from about 27 knots today to around 9 knots by Mon. The first lighter day (12 knots or less) looks like Thu.",
+   "rough_now": true,
+   "calm_ahead": true,
+   "seas_near": "1-5 ft over the week (today up to 5 ft)",
+   "seas_off": "2-9 ft over the week (today up to 9 ft)",
+   "water": "78-84\u00b0F",
+   "water_hi": 84,
+   "water_lo": 78,
+   "moon": "Full Moon, 97% lit",
+   "tides": "Stronger tidal movement this week around the full moon. Moving water, especially the incoming tide, is traditionally the better bite."
+  },
+  "wind_days": [
+   {
+    "date": "2026-10-27",
+    "day": "Tue",
+    "wind_kt": 27,
+    "gust_kt": 35,
+    "dir": "N"
+   },
+   {
+    "date": "2026-10-28",
+    "day": "Wed",
+    "wind_kt": 15,
+    "gust_kt": 19,
+    "dir": "NW"
+   },
+   {
+    "date": "2026-10-29",
+    "day": "Thu",
+    "wind_kt": 9,
+    "gust_kt": 12,
+    "dir": "E"
+   },
+   {
+    "date": "2026-10-30",
+    "day": "Fri",
+    "wind_kt": 11,
+    "gust_kt": 14,
+    "dir": "E"
+   },
+   {
+    "date": "2026-10-31",
+    "day": "Sat",
+    "wind_kt": 11,
+    "gust_kt": 14,
+    "dir": "E"
+   },
+   {
+    "date": "2026-11-01",
+    "day": "Sun",
+    "wind_kt": 10,
+    "gust_kt": 13,
+    "dir": "E"
+   },
+   {
+    "date": "2026-11-02",
+    "day": "Mon",
+    "wind_kt": 5,
+    "gust_kt": 6,
+    "dir": "W"
+   }
+  ]
+ },
+ "generated": "2026-10-27T13:23-04:00",
+ "generated_label": "Tuesday, October 27, 2026 at 1:23 PM ET",
  "location": "The Palms of Islamorada, MM 79.9 oceanside",
  "stations": {
   "tide_ocean": "8723814",
@@ -9,6 +206,14 @@
   "marine_zones": [
    "GMZ042",
    "GMZ052"
+  ],
+  "open_meteo_near": [
+   24.92,
+   -80.6
+  ],
+  "open_meteo_offshore": [
+   24.8,
+   -80.4
   ]
  },
  "days": [
@@ -536,8 +741,8 @@
   }
  ],
  "water_temp": {
-  "f": 77.9,
-  "time": "Oct 27, 12:54 PM",
+  "f": 78.1,
+  "time": "Oct 27, 1:18 PM",
   "station": "Vaca Key, Florida Bay (8723970)"
  },
  "errors": []
