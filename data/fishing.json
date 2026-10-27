@@ -1,6 +1,6 @@
 {
- "generated": "2026-10-27T13:00-04:00",
- "generated_label": "Tuesday, October 27, 2026 at 1:00 PM ET",
+ "generated": "2026-10-27T13:04-04:00",
+ "generated_label": "Tuesday, October 27, 2026 at 1:04 PM ET",
  "location": "The Palms of Islamorada, MM 79.9 oceanside",
  "stations": {
   "tide_ocean": "8723814",
@@ -38,7 +38,7 @@
     {
      "type": "Low",
      "time": "4:03 AM",
-     "ft": -0.0
+     "ft": 0.0
     },
     {
      "type": "High",
@@ -60,7 +60,7 @@
     {
      "type": "Low",
      "time": "7:07 AM",
-     "ft": -0.0
+     "ft": 0.0
     },
     {
      "type": "High",
@@ -105,7 +105,7 @@
     {
      "type": "Low",
      "time": "4:50 AM",
-     "ft": -0.0
+     "ft": 0.0
     },
     {
      "type": "High",
@@ -127,7 +127,7 @@
     {
      "type": "Low",
      "time": "7:56 AM",
-     "ft": -0.0
+     "ft": 0.0
     },
     {
      "type": "High",
