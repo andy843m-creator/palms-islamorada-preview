@@ -4,7 +4,7 @@
    {
     "key": "backcountry",
     "title": "Backcountry",
-    "text": "Typical for October: snook and redfish are usually the top targets. Bay and mangrove shorelines are the most protected water when the wind blows. Stronger moon tides should keep water moving.",
+    "text": "Typical for October: snook and redfish are usually the top targets. Light wind makes the mangrove shorelines and channels easy to fish.",
     "species": [
      {
       "name": "Snook",
@@ -36,7 +36,7 @@
    {
     "key": "flats",
     "title": "Flats",
-    "text": "Typical for October: bonefish is usually the top target. Sight fishing needs calm, clear water, so wait for the lighter days.",
+    "text": "Typical for October: bonefish is usually the top target. Light wind and clear water favor sight fishing.",
     "species": [
      {
       "name": "Bonefish",
@@ -68,7 +68,7 @@
    {
     "key": "reef",
     "title": "Reef",
-    "text": "Typical for October: yellowtail snapper and grouper are usually the top targets. Seas on the reef line are rough early in the week; conditions look better later in the week. Stronger moon tides should keep water moving.",
+    "text": "Typical for October: yellowtail snapper and grouper are usually the top targets. Seas look manageable for the reef line.",
     "species": [
      {
       "name": "Yellowtail snapper",
@@ -100,7 +100,7 @@
    {
     "key": "offshore",
     "title": "Offshore / Deep Sea",
-    "text": "Typical for October: wahoo is usually the top target. Offshore seas reach about 9 ft at times this week, so pick your day.",
+    "text": "Typical for October: wahoo is usually the top target. Offshore seas look fishable for most of the week.",
     "species": [
      {
       "name": "Wahoo",
@@ -131,73 +131,73 @@
    }
   ],
   "conditions": {
-   "wind_trend": "dropping",
-   "wind_now": "N 27 kt, gusts 35 kt",
-   "outlook": "Winds are forecast to drop from about 27 knots today to around 9 knots by Mon. The first lighter day (12 knots or less) looks like Thu.",
-   "rough_now": true,
+   "wind_trend": "steady",
+   "wind_now": "NE 11 kt, gusts 17 kt",
+   "outlook": "Winds are forecast to stay fairly steady, around 10 knots most days. Today already looks light.",
+   "rough_now": false,
    "calm_ahead": true,
-   "seas_near": "1-5 ft over the week (today up to 5 ft)",
-   "seas_off": "2-9 ft over the week (today up to 9 ft)",
-   "water": "78-84\u00b0F",
+   "seas_near": "1-2 ft over the week (today up to 2 ft)",
+   "seas_off": "2-3 ft over the week (today up to 3 ft)",
+   "water": "80-84\u00b0F",
    "water_hi": 84,
-   "water_lo": 78,
-   "moon": "Full Moon, 97% lit",
-   "tides": "Stronger tidal movement this week around the full moon. Moving water, especially the incoming tide, is traditionally the better bite."
+   "water_lo": 80,
+   "moon": "Waning Gibbous, 88% lit",
+   "tides": "Moderate tides this week (between quarter moons). Plan around moving water rather than slack tide."
   },
   "wind_days": [
    {
-    "date": "2026-10-27",
-    "day": "Tue",
-    "wind_kt": 27,
-    "gust_kt": 35,
-    "dir": "N"
-   },
-   {
-    "date": "2026-10-28",
-    "day": "Wed",
-    "wind_kt": 15,
-    "gust_kt": 19,
-    "dir": "NW"
-   },
-   {
     "date": "2026-10-29",
     "day": "Thu",
-    "wind_kt": 9,
-    "gust_kt": 12,
-    "dir": "E"
+    "wind_kt": 11,
+    "gust_kt": 17,
+    "dir": "NE"
    },
    {
     "date": "2026-10-30",
     "day": "Fri",
-    "wind_kt": 11,
-    "gust_kt": 14,
-    "dir": "E"
+    "wind_kt": 10,
+    "gust_kt": 13,
+    "dir": "NE"
    },
    {
     "date": "2026-10-31",
     "day": "Sat",
-    "wind_kt": 11,
-    "gust_kt": 14,
+    "wind_kt": 12,
+    "gust_kt": 15,
     "dir": "E"
    },
    {
     "date": "2026-11-01",
     "day": "Sun",
-    "wind_kt": 10,
-    "gust_kt": 13,
+    "wind_kt": 11,
+    "gust_kt": 15,
     "dir": "E"
    },
    {
     "date": "2026-11-02",
     "day": "Mon",
-    "wind_kt": 5,
-    "gust_kt": 6,
-    "dir": "W"
+    "wind_kt": 10,
+    "gust_kt": 14,
+    "dir": "SE"
+   },
+   {
+    "date": "2026-11-03",
+    "day": "Tue",
+    "wind_kt": 7,
+    "gust_kt": 8,
+    "dir": "E"
+   },
+   {
+    "date": "2026-11-04",
+    "day": "Wed",
+    "wind_kt": 8,
+    "gust_kt": 10,
+    "dir": "E"
    }
   ]
  },
- "generated": "2026-10-27T13:26-04:00",
- "generated_label": "Tuesday, October 27, 2026 at 1:26 PM ET",
+ "generated": "2026-10-29T00:36-04:00",
+ "generated_label": "Thursday, October 29, 2026 at 12:36 AM ET",
  "location": "The Palms of Islamorada, MM 79.9 oceanside",
  "stations": {
   "tide_ocean": "8723814",
@@ -217,135 +217,6 @@
   ]
  },
  "days": [
-  {
-   "date": "2026-10-27",
-   "label": "Tue, Oct 27",
-   "sunrise": "7:28 AM",
-   "sunset": "6:46 PM",
-   "moon": {
-    "phase": "Full Moon",
-    "illumination": 97,
-    "rise": "7:52 PM",
-    "set": "9:00 AM"
-   },
-   "solunar": {
-    "major": [
-     "12:58 AM - 2:58 AM",
-     "1:28 PM - 3:28 PM"
-    ],
-    "minor": [
-     "7:22 PM - 8:22 PM",
-     "8:30 AM - 9:30 AM"
-    ],
-    "rating": "Excellent"
-   },
-   "tides_ocean": [
-    {
-     "type": "Low",
-     "time": "4:03 AM",
-     "ft": 0.0
-    },
-    {
-     "type": "High",
-     "time": "10:41 AM",
-     "ft": 2.9
-    },
-    {
-     "type": "Low",
-     "time": "4:34 PM",
-     "ft": 0.6
-    },
-    {
-     "type": "High",
-     "time": "10:45 PM",
-     "ft": 2.6
-    }
-   ],
-   "tides_bay": [
-    {
-     "type": "Low",
-     "time": "7:07 AM",
-     "ft": 0.0
-    },
-    {
-     "type": "High",
-     "time": "12:33 PM",
-     "ft": 0.6
-    },
-    {
-     "type": "Low",
-     "time": "6:34 PM",
-     "ft": 0.3
-    },
-    {
-     "type": "High",
-     "time": "11:43 PM",
-     "ft": 0.9
-    }
-   ]
-  },
-  {
-   "date": "2026-10-28",
-   "label": "Wed, Oct 28",
-   "sunrise": "7:28 AM",
-   "sunset": "6:46 PM",
-   "moon": {
-    "phase": "Waning Gibbous",
-    "illumination": 92,
-    "rise": "8:48 PM",
-    "set": "10:08 AM"
-   },
-   "solunar": {
-    "major": [
-     "1:58 AM - 3:58 AM",
-     "2:30 PM - 4:30 PM"
-    ],
-    "minor": [
-     "8:18 PM - 9:18 PM",
-     "9:38 AM - 10:38 AM"
-    ],
-    "rating": "Good"
-   },
-   "tides_ocean": [
-    {
-     "type": "Low",
-     "time": "4:50 AM",
-     "ft": 0.0
-    },
-    {
-     "type": "High",
-     "time": "11:30 AM",
-     "ft": 2.8
-    },
-    {
-     "type": "Low",
-     "time": "5:22 PM",
-     "ft": 0.7
-    },
-    {
-     "type": "High",
-     "time": "11:34 PM",
-     "ft": 2.6
-    }
-   ],
-   "tides_bay": [
-    {
-     "type": "Low",
-     "time": "7:56 AM",
-     "ft": 0.0
-    },
-    {
-     "type": "High",
-     "time": "1:24 PM",
-     "ft": 0.6
-    },
-    {
-     "type": "Low",
-     "time": "7:10 PM",
-     "ft": 0.3
-    }
-   ]
-  },
   {
    "date": "2026-10-29",
    "label": "Thu, Oct 29",
@@ -674,75 +545,204 @@
      "ft": 0.4
     }
    ]
+  },
+  {
+   "date": "2026-11-03",
+   "label": "Tue, Nov 3",
+   "sunrise": "6:32 AM",
+   "sunset": "5:42 PM",
+   "moon": {
+    "phase": "Waning Crescent",
+    "illumination": 30,
+    "rise": "1:16 AM",
+    "set": "2:16 PM"
+   },
+   "solunar": {
+    "major": [
+     "6:50 AM - 8:50 AM",
+     "7:12 PM - 9:12 PM"
+    ],
+    "minor": [
+     "12:46 AM - 1:46 AM",
+     "1:46 PM - 2:46 PM"
+    ],
+    "rating": "Fair"
+   },
+   "tides_ocean": [
+    {
+     "type": "High",
+     "time": "3:53 AM",
+     "ft": 2.4
+    },
+    {
+     "type": "Low",
+     "time": "10:06 AM",
+     "ft": 0.7
+    },
+    {
+     "type": "High",
+     "time": "4:25 PM",
+     "ft": 2.5
+    },
+    {
+     "type": "Low",
+     "time": "10:39 PM",
+     "ft": 0.6
+    }
+   ],
+   "tides_bay": [
+    {
+     "type": "High",
+     "time": "5:22 AM",
+     "ft": 0.8
+    },
+    {
+     "type": "Low",
+     "time": "1:12 PM",
+     "ft": 0.3
+    },
+    {
+     "type": "High",
+     "time": "6:31 PM",
+     "ft": 0.6
+    }
+   ]
+  },
+  {
+   "date": "2026-11-04",
+   "label": "Wed, Nov 4",
+   "sunrise": "6:32 AM",
+   "sunset": "5:42 PM",
+   "moon": {
+    "phase": "Waning Crescent",
+    "illumination": 21,
+    "rise": "2:14 AM",
+    "set": "2:50 PM"
+   },
+   "solunar": {
+    "major": [
+     "7:36 AM - 9:36 AM",
+     "7:58 PM - 9:58 PM"
+    ],
+    "minor": [
+     "1:44 AM - 2:44 AM",
+     "2:20 PM - 3:20 PM"
+    ],
+    "rating": "Good"
+   },
+   "tides_ocean": [
+    {
+     "type": "High",
+     "time": "4:58 AM",
+     "ft": 2.5
+    },
+    {
+     "type": "Low",
+     "time": "11:07 AM",
+     "ft": 0.7
+    },
+    {
+     "type": "High",
+     "time": "5:21 PM",
+     "ft": 2.5
+    },
+    {
+     "type": "Low",
+     "time": "11:33 PM",
+     "ft": 0.5
+    }
+   ],
+   "tides_bay": [
+    {
+     "type": "Low",
+     "time": "1:17 AM",
+     "ft": 0.3
+    },
+    {
+     "type": "High",
+     "time": "6:42 AM",
+     "ft": 0.7
+    },
+    {
+     "type": "Low",
+     "time": "1:59 PM",
+     "ft": 0.3
+    },
+    {
+     "type": "High",
+     "time": "7:12 PM",
+     "ft": 0.7
+    }
+   ]
   }
  ],
  "marine": [
   {
    "zone": "GMZ042",
    "name": "Hawk Channel, Ocean Reef to Craig Key (out to the reef)",
-   "updated": "2026-10-27T10:14:00-04:00",
+   "updated": "2026-10-28T22:21:00-04:00",
    "periods": [
     {
-     "name": "This Afternoon",
-     "text": "North to northeast winds 25 to 30 knots with frequent gusts to near 35 knots, decreasing to 20 to 25 knots. Seas 3 to 5 feet, occasionally to 6 feet. Nearshore waters extremely rough, becoming very rough. A chance of showers with a slight chance of thunderstorms."
-    },
-    {
-     "name": "Tonight",
-     "text": "North to northeast winds near 20 knots, becoming north and decreasing to 10 to 15 knots. Seas 2 to 4 feet, occasionally to 5 feet, subsiding to 2 to 3 feet. Nearshore waters rough, becoming a light to moderate chop. A chance of showers with a slight chance of thunderstorms."
-    },
-    {
-     "name": "Wednesday",
-     "text": "North to northeast winds near 10 knots, becoming east to southeast and decreasing to 5 to 10 knots. Seas around 2 feet, subsiding to 1 to 2 feet. Nearshore waters a light chop, becoming smooth to a light chop. A chance of showers with a slight chance of thunderstorms."
-    },
-    {
-     "name": "Wednesday Night",
-     "text": "East winds 5 to 10 knots. Seas 1 to 2 feet. Nearshore waters smooth to a light chop. A chance of showers with a slight chance of thunderstorms."
+     "name": "Overnight",
+     "text": "Northeast winds near 10 knots. Seas 1 to 2 feet, except 2 to 4 feet, occasionally to 5 feet west of Cosgrove Shoal Light. Nearshore waters a light chop. A slight chance of showers."
     },
     {
      "name": "Thursday",
-     "text": "East winds near 5 knots. Seas around 1 foot. Nearshore waters smooth. A slight chance of showers and thunderstorms."
+     "text": "Northeast winds 5 to 10 knots. Seas 1 to 2 feet, except 2 to 3 feet west of Cosgrove Shoal Light. Nearshore waters smooth to a light chop. A slight chance of showers."
     },
     {
      "name": "Thursday Night",
-     "text": "Northeast to east winds near 5 knots. Seas around 1 foot. Nearshore waters smooth. A slight chance of showers and thunderstorms."
+     "text": "Northeast winds 5 to 10 knots. Seas 1 to 2 feet. Nearshore waters smooth to a light chop. A slight chance of showers."
+    },
+    {
+     "name": "Friday",
+     "text": "Northeast to east winds near 10 knots. Seas 1 to 2 feet. Nearshore waters a light chop. A slight chance of showers and thunderstorms."
+    },
+    {
+     "name": "Friday Night",
+     "text": "Northeast to east winds 10 to 15 knots. Seas 1 to 2 feet. Nearshore waters a light to moderate chop. A slight chance of showers and thunderstorms."
+    },
+    {
+     "name": "Saturday",
+     "text": "Northeast to east winds near 10 knots. Seas 1 to 2 feet. Nearshore waters a light chop. A slight chance of showers and thunderstorms."
     }
    ]
   },
   {
    "zone": "GMZ052",
    "name": "Straits of Florida, Ocean Reef to Craig Key (out 20 NM)",
-   "updated": "2026-10-27T10:14:00-04:00",
+   "updated": "2026-10-28T22:21:00-04:00",
    "periods": [
     {
-     "name": "This Afternoon",
-     "text": "North to northeast winds 25 to 30 knots with frequent gusts to near 35 knots, decreasing to 20 to 25 knots. Seas 8 to 11 feet, occasionally to 14 feet, subsiding to 6 to 8 feet, occasionally to 10 feet. Wave Detail: Northeast 10 feet at 8 seconds, becoming northeast 8 feet at 8 seconds. Showers likely with a slight chance of thunderstorms."
-    },
-    {
-     "name": "Tonight",
-     "text": "North to northeast winds 20 to 25 knots, decreasing to 15 to 20 knots. Seas 5 to 8 feet, occasionally to 10 feet. Wave Detail: Northeast 7 feet at 8 seconds. A chance of showers with a slight chance of thunderstorms."
-    },
-    {
-     "name": "Wednesday",
-     "text": "North to northeast winds 10 to 15 knots, becoming northeast and decreasing to 5 to 10 knots. Seas subsiding to 3 to 5 feet, occasionally to 6 feet. Wave Detail: Northeast 5 feet at 7 seconds and northwest to north 2 feet at 3 seconds. A chance of showers with a slight chance of thunderstorms."
-    },
-    {
-     "name": "Wednesday Night",
-     "text": "East winds 5 to 10 knots. Seas subsiding to 2 to 3 feet. A chance of showers with a slight chance of thunderstorms."
+     "name": "Overnight",
+     "text": "Northeast to east winds near 10 knots, decreasing to 5 to 10 knots. Seas 3 to 5 feet, occasionally to 6 feet, subsiding to 2 to 4 feet, occasionally to 5 feet. Wave Detail: North to northeast 3 feet at 6 seconds. A slight chance of showers."
     },
     {
      "name": "Thursday",
-     "text": "East winds near 5 knots. Seas 1 to 2 feet. A slight chance of showers and thunderstorms."
+     "text": "Northeast winds 5 to 10 knots. Seas subsiding to 2 to 3 feet. Wave Detail: Northeast 2 feet at 5 seconds. A slight chance of showers."
     },
     {
      "name": "Thursday Night",
-     "text": "East winds 5 to 10 knots. Seas 1 to 2 feet. A slight chance of showers and thunderstorms."
+     "text": "Northeast to east winds 5 to 10 knots. Seas 2 to 3 feet. Wave Detail: Northeast 2 feet at 5 seconds. A slight chance of showers."
+    },
+    {
+     "name": "Friday",
+     "text": "Northeast to east winds 5 to 10 knots, increasing to near 10 knots. Seas 2 to 3 feet. A slight chance of showers and thunderstorms."
+    },
+    {
+     "name": "Friday Night",
+     "text": "Northeast to east winds 10 to 15 knots. Seas 2 to 3 feet. A chance of showers with a slight chance of thunderstorms."
+    },
+    {
+     "name": "Saturday",
+     "text": "East winds near 10 knots. Seas subsiding to 1 to 2 feet. A slight chance of showers and thunderstorms."
     }
    ]
   }
  ],
  "water_temp": {
-  "f": 78.1,
-  "time": "Oct 27, 1:18 PM",
+  "f": 79.7,
+  "time": "Oct 29, 12:30 AM",
   "station": "Vaca Key, Florida Bay (8723970)"
  },
  "errors": []
